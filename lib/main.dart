@@ -33,3 +33,16 @@ void main() {
 // StatelessWidgets : Don't manage any internal data (state), Only update the screen if parent widgets were updated (re-rendered). This should be the default choice if changing the state of the widget is not required. 
 
 // StatefulWidgets : Do manage internal data (State), When state changes, the widget is re-rendered and the UI is updated. Use whenever you have changing data that should cause UI updates. 
+
+// Flutter Lifecycle:
+
+// Every Flutter Widget has a built-in lifecycle: A collection of methods that are automatically executed by Flutter (at certain points of time).
+
+// There are three extremely important (stateful) widget lifecycle methods you should be aware of:
+
+// initState(): Executed by Flutter when the StatefulWidget's State object is initialized
+
+// build(): Executed by Flutter when the Widget is built for the first time AND after setState() was called
+
+// dispose(): Executed by Flutter right before the Widget will be deleted (e.g., because it was displayed conditionally)
+
